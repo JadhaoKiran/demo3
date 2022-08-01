@@ -3,13 +3,14 @@ var app = express();
 
 app.get("/", (req, resp)=>
 {
-    " <h3>Welcome to exam </h3> "
+   resp.send( "<h3>Welcome to exam </h3>"
     + "<h4>List of Names </h4>"
     + "<ol>"
     +"<li> Kiran</li>"
     +"<li> Kiran</li>"
     +"<li> Kiran</li>"
     +"</ol>"
+   )
 });
 
 app.get("/home", (req,resp)=>{
